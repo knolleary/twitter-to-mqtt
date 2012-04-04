@@ -25,4 +25,8 @@ To start the daemon, run:
 
 It can be stopped with Ctrl^C, but thanks to the way pycurl works, it will not exit until the next tweet is received. Alternatively, kill the process.
 
+TODO
+----
+
+1. Handle connection lost from either connection
 
