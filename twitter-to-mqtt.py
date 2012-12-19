@@ -18,7 +18,7 @@ class TwitterStreamClient:
       self.client.disconnect()
       self.shutdown = True;
     
-  def onmqttconnect(self,client,rc):
+  def onmqttconnect(self,client,obj,rc):
     if rc == 0:
       self.streamthread = threading.Thread(target=self.startstream)
       self.streamthread.start()
